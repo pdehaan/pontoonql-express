@@ -8,5 +8,5 @@ Go to **/:product/:pct?**, where `:product` is the project slug from https://pon
 
 ## Example:
 
-- [https://pontoonql.now.sh/firefox-monitor-website](/firefox-monitor-website) &mdash; Fetch all locales with at least **80%** translations (default) for the **"firefox-monitor-website"** project.
-- [https://pontoonql.now.sh/firefox-accounts/90](/firefox-accounts/90) &mdash; Fetch all locales with at least **90%** translations for the **"firefox-accounts"** project.
+- [/firefox-monitor-website](https://pontoonql.now.sh/firefox-monitor-website) &mdash; Fetch all locales with at least **80%** translations (default) for the **"firefox-monitor-website"** project.
+- [/firefox-accounts/90](https://pontoonql.now.sh/firefox-accounts/90) &mdash; Fetch all locales with at least **90%** translations for the **"firefox-accounts"** project.
