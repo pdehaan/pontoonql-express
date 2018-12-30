@@ -1,0 +1,28 @@
+<header>
+  <h1>{{ product }}</h1>
+  <p>The following locales have at least <em>{{ pct }}%</em> translations:</p>
+</header>
+
+<section>
+  <p class="res"><code>{{ toStr locales }}</code></p>
+
+  <p class="res"><code>{{ toJSON locales }}</code></p>
+
+  <!-- table>
+    <thead>
+      <tr>
+        <th>Language</th>
+        <th>Pct</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each languages}}
+      <tr>
+        <td>{{ locale.code }}</td>
+        <td>{{ progress }}%</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table -->
+
+</section>

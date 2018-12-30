@@ -1,0 +1,26 @@
+{
+  "name": "pontoonql-express",
+  "description": "Express front end for PontoonQL",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com> (https://about.me/peterdehaan)",
+  "bugs": {
+    "url": "https://github.com/pdehaan/pontooql-express/issues"
+  },
+  "dependencies": {
+    "express": "4.16.4",
+    "express-handlebars": "3.0.0",
+    "pontoonql": "github:pdehaan/pontoonql"
+  },
+  "homepage": "https://pontoonql.now.sh/",
+  "keywords": [],
+  "license": "MPL-2.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/pontooql-express.git"
+  },
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
