@@ -1,6 +1,6 @@
 # pontoonql-express
 
-Express front end for PontoonQL
+Express front end for [PontoonQL](https://github.com/pdehaan/pontoonql).
 
 ## Usage:
 
