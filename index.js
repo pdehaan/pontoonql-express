@@ -15,6 +15,9 @@ app.engine(
       },
       toStr(arr) {
         return arr.join(",");
+      },
+      toPct(num) {
+        return Number(num).toFixed(1);
       }
     }
   })
@@ -29,11 +32,13 @@ app.get(PATH, async (req, res) => {
   try {
     const languages = await pontoonql(product, pct);
     const readyLocales = languages.map(language => language.locale.code).sort();
+    const pendingLocales = languages.filter(language => language.progress !== 100);
 
     res.render("product", {
       product,
       pct,
       locales: readyLocales,
+      pendingLocales,
       languages
     });
   } catch (err) {

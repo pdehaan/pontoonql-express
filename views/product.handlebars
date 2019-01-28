@@ -8,7 +8,9 @@
 
   <p class="res"><code>{{ toJSON locales }}</code></p>
 
-  <!-- table>
+  {{#if pendingLocales.length}}
+  <table>
+    <caption>{{ pct }}% &lt;= <em>n</em> &lt; 100%</caption>
     <thead>
       <tr>
         <th>Language</th>
@@ -16,13 +18,13 @@
       </tr>
     </thead>
     <tbody>
-      {{#each languages}}
+      {{#each pendingLocales}}
       <tr>
-        <td>{{ locale.code }}</td>
-        <td>{{ progress }}%</td>
+        <td>{{ locale.code }} <small>({{ locale.name }})</small></td>
+        <td>{{ toPct progress }}%</td>
       </tr>
       {{/each}}
     </tbody>
-  </table -->
-
+  </table>
+  {{/if}}
 </section>
